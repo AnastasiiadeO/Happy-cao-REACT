@@ -1,0 +1,17 @@
+.botao {
+    font-family: "Nunito", sans-serif;
+    background-color: #EA7057;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 32px;
+    border: none;
+    cursor: pointer;
+    color: #fefefe;
+    margin: 32px auto;
+    width: 100%;
+
+}
+
+.botao:hover {
+    background-color: #D67FDC;
+}

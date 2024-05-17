@@ -1,0 +1,40 @@
+.caozinho {
+    width: 280px;
+}
+
+.caozinho .cabecalho {
+    background-color:  #FeFeFe;
+    border-radius: 10px 10px 0px 0px;
+}
+.caozinho img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.caozinho .rodape {
+    background: #FeFeFe;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caozinho .rodape h4 {
+    color: #D67FDC;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.caozinho .rodape h5 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    text-align: start;
+}

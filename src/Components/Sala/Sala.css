@@ -1,0 +1,20 @@
+.sala {
+    text-align: center;
+    padding: 20px;
+}
+
+.sala h3 {
+    font-size: 28px;
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;
+    color: #fefefe;
+}
+
+.caozinhos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px
+}
