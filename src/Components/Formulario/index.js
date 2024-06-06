@@ -4,6 +4,7 @@ import ListaSalas from "../ListaSalas";
 import Botao from "../Botao";
 import './Formulario.css';
 
+
 const Formulario = (props) => {
     
 
@@ -29,10 +30,28 @@ const Formulario = (props) => {
         setSala('');
     }
 
+
+
+    const [nomeBotao, setNomeBotao] = useState('Abrir Formulario');
+    const [hidden, setHidden] = useState('hidden');
+
+    function esconderF(evento) {
+        evento.preventDefault();
+        if (nomeBotao === 'Abrir Formulario') {
+            setHidden('');
+
+            setNomeBotao('Fechar Formulario');
+        } else {
+            setHidden('hidden');
+            setNomeBotao('Abrir Formulario');
+        }
+
+    }
+
     return (
         <section className='formulario'>
-            <h3>Preencha os dados para registrar o cãozinho</h3>
-            <form onSubmit={aoSalvar}>
+            <h3 className={hidden}>Preencha os dados para registrar o cãozinho</h3>
+            <form onSubmit={aoSalvar} className={hidden}>
                 <Campo 
                     obrigatorio={true}
                     label="Nome"
@@ -70,7 +89,8 @@ const Formulario = (props) => {
                     aoAlterar={valor => setSala(valor)}
                 />
                 <Botao />
-            </form>
+        </form>
+            <button className='ecronderFormulario' onClick={esconderF}>{nomeBotao}</button>
         </section>
     )
 }
